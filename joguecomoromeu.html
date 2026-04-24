@@ -1,80 +1,79 @@
 <style>
-    .game-section {
-        background-color: #000000;
-        padding: 40px 0;
+    /* Estilo para manter o fundo preto e textos visíveis */
+    .secao-interativa {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
     }
 
-    .game-container {
+    .titulo-jogo {
+        color: #ffd700; /* Dourado para os títulos */
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .subtitulo-jogo {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Container para tornar o Genially responsivo */
+    .genially-container {
         position: relative;
         padding-bottom: 56.25%; /* Proporção 16:9 */
         height: 0;
         overflow: hidden;
-        border-radius: 8px;
-        background: #1a1a1a;
+        margin-bottom: 50px;
+        border: 2px solid #333;
+        border-radius: 10px;
     }
 
-    .game-container iframe {
+    .genially-container iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border: 0;
-    }
-
-    .game-card {
-        background-color: #1a1a1a !important;
-        border: 1px solid #ffd700 !important; /* Borda dourada para destacar os jogos */
-        margin-bottom: 40px;
-    }
-
-    .game-title {
-        color: #ffd700 !important;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        font-size: 1.2rem;
     }
 </style>
 
-<div class="container-fluid game-section">
-    <div class="container">
-        
-        <h1 class="main-title">Interativos do Romeu</h1>
-
-        <div class="card game-card">
-            <div class="card-body">
-                <h2 class="game-title">Ajude o Romeu a ter um Bem-Estar de Qualidade</h2>
-                <div class="game-container">
-                    <iframe title="Escape Game Agente Secreto" 
-                            src="https://view.genially.com/6952e15804a605aad750fa33" 
-                            type="text/html" allowfullscreen="true"></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="card game-card">
-            <div class="card-body">
-                <h2 class="game-title">Romeu: Entendendo sobre Limpeza e Higiene</h2>
-                <div class="game-container">
-                    <iframe title="ROMEU" 
-                            src="https://view.genially.com/695302687925b4e1781ed2b9" 
-                            type="text/html" allowfullscreen="true"></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div class="card game-card">
-            <div class="card-body">
-                <h2 class="game-title">Ajude Romeu a montar seu Kit de Primeiros Socorros</h2>
-                <div class="game-container">
-                    <iframe title="AJUDE O ROMEU A MONTAR SEU KIT DE PRIMEIROS SOCORROS" 
-                            src="https://view.genially.com/6953d493963dee4f07b83e15" 
-                            type="text/html" allowfullscreen="true"></iframe>
-                </div>
-            </div>
-        </div>
-
+<div class="secao-interativa">
+    
+    <div class="titulo-jogo">Ajude o Romeu a ter um Bem Estar de qualidade</div>
+    <div class="subtitulo-jogo">Romeu precisa de ajuda</div>
+    
+    <div class="genially-container">
+        <iframe title="Escape Game Agente Secreto" 
+                frameborder="0" 
+                src="https://view.genially.com/6952e15804a605aad750fa33" 
+                allowfullscreen="true">
+        </iframe>
     </div>
+
+    <div class="titulo-jogo">Limpeza e Higiene para Equinos</div>
+    <div class="subtitulo-jogo">Agora Romeu precisa de ajuda para entender sobre higiene</div>
+    
+    <div class="genially-container">
+        <iframe title="ROMEU" 
+                frameborder="0" 
+                src="https://view.genially.com/695302687925b4e1781ed2b9" 
+                allowfullscreen="true">
+        </iframe>
+    </div>
+
+    <div class="titulo-jogo">Kit de Primeiros Socorros</div>
+    <div class="subtitulo-jogo">Ajude Romeu a montar seu kit</div>
+    
+    <div class="genially-container">
+        <iframe title="AJUDE O ROMEU A MONTAR SEU KIT DE PRIMEIROS SOCORROS" 
+                frameborder="0" 
+                src="https://view.genially.com/6953d493963dee4f07b83e15" 
+                allowfullscreen="true">
+        </iframe>
+    </div>
+
 </div>
