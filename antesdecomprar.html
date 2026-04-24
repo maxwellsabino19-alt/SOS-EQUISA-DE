@@ -256,20 +256,110 @@
             <li>Tenho tempo disponível para o manejo diário?</li>
         </ul>
     </section>
+<style>
+    .compra-app-module {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+        padding: 15px;
+    }
 
-    <div class="checklist-final">
-        <h2>Resumo Pré-Compra</h2>
-        <ul style="column-count: 2;">
-            <li>Definir objetivo claro</li>
-            <li>Fazer exame pré-compra</li>
-            <li>Conferir histórico sanitário</li>
-            <li>Avaliar comportamento</li>
-            <li>Calcular custos reais</li>
-            <li>Ter estrutura adequada</li>
-            <li>Conferir documentação</li>
-        </ul>
+    .compra-app-module .checklist-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .compra-app-module h2 {
+        color: #ffd700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilização dos Botões */
+    .compra-app-module .btn-check {
+        background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+        border: 1px solid #333;
+        border-radius: 10px;
+        color: #eee;
+        padding: 15px 10px;
+        font-size: 0.85rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Ícone de check dourado acima do texto */
+    .compra-app-module .btn-check::before {
+        content: "✓";
+        color: #ffd700;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    /* ANIMAÇÕES */
+    
+    /* Efeito ao passar o mouse ou manter pressionado */
+    .compra-app-module .btn-check:hover {
+        border-color: #ffd700;
+        transform: translateY(-3px);
+        background: linear-gradient(145deg, #222, #111);
+        box-shadow: 0 6px 12px rgba(255, 215, 0, 0.15);
+    }
+
+    /* Efeito de clique (feedback visual) */
+    .compra-app-module .btn-check:active {
+        transform: scale(0.95);
+        background: #ffd700;
+        color: #000;
+    }
+
+    .compra-app-module .btn-check:active::before {
+        color: #000;
+    }
+
+    /* Ajuste para telas pequenas (coluna única) */
+    @media (max-width: 400px) {
+        .compra-app-module .checklist-grid {
+            grid-template-columns: 1fr;
+        }
+        .compra-app-module .btn-check {
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 20px;
+        }
+        .compra-app-module .btn-check::before {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+</style>
+
+<div class="compra-app-module">
+    <h2>Resumo Pré-Compra</h2>
+    
+    <div class="checklist-grid">
+        <div class="btn-check">Definir objetivo claro - sobre o uso do animal</div>
+        <div class="btn-check">Fazer exame pré-compra - Para avaliar a saúde do animal</div>
+        <div class="btn-check">Conferir histórico sanitário - Para verificar quais doenças ele já teve e quais vacinas tomou</div>
+        <div class="btn-check">Avaliar comportamento - Para identificar se será tranquilo lidar com ele</div>
+        <div class="btn-check">Calcular custos reais - Saber quanto você gasta com o animal pode ser bem útil no aperto financeiro</div>
+        <div class="btn-check">Ter estrutura adequada - O animal precisa ter um ambiente seguro e confortável</div>
+        <div class="btn-check" style="grid-column: span 1;">Conferir documentação - Evita problemas com fiscalização</div>
     </div>
-
+</div>
     <footer>
         <p>SOS EQUISAÚDE © 2026 - CONSULTORIA EM BEM-ESTAR E SAÚDE EQUINA</p>
     </footer>

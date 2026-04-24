@@ -85,14 +85,88 @@
                 <li><span class="label-tag">ECC > 7</span> Resistência insulínica, riscos de laminite e alterações hormonais.</li>
             </ul>
 
-            <h3>Nutrientes e Suplementação</h3>
-            <div class="grid-nutri">
-                <div class="nutri-item"><strong>Proteína</strong> Suporte à qualidade seminal e desenvolvimento gestacional.</div>
-                <div class="nutri-item"><strong>Lipídios</strong> Eficiência energética sem excesso de carboidratos.</div>
-                <div class="nutri-item"><strong>Minerais (Selênio/Zinco/Cobre)</strong> Antioxidantes e base para espermatogênese e desenvolvimento fetal.</div>
-                <div class="nutri-item"><strong>Vitaminas (A/E)</strong> Saúde uterina e proteção dos tecidos reprodutivos.</div>
-            </div>
+           <style>
+    .nutri-section {
+        background-color: #000000 !important;
+        padding: 20px 0;
+    }
 
+    /* Título da Seção */
+    .nutri-section h3 {
+        color: #ffd700 !important;
+        text-align: center;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    /* Estilização dos Cards de Nutrientes */
+    .card-nutriente {
+        background-color: #1a1a1a !important;
+        border: 1px solid #ffd700 !important;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .card-nutriente:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+    }
+
+    .card-nutriente .card-body {
+        padding: 20px;
+        color: #ffffff;
+    }
+
+    /* Destaque para o nome do Nutriente */
+    .nutri-header {
+        display: block;
+        color: #ffd700;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 5px;
+    }
+
+    .nutri-text {
+        color: #eeeeee;
+        line-height: 1.5;
+    }
+</style>
+
+<div class="container nutri-section">
+    <h3>Nutrientes e Suplementação</h3>
+
+    <div class="card card-nutriente">
+        <div class="card-body">
+            <span class="nutri-header">Proteína</span>
+            <p class="nutri-text">Suporte à qualidade seminal e desenvolvimento gestacional.</p>
+        </div>
+    </div>
+
+    <div class="card card-nutriente">
+        <div class="card-body">
+            <span class="nutri-header">Lipídios (gorduras) </span>
+            <p class="nutri-text">Eficiência energética sem excesso de carboidratos.</p>
+        </div>
+    </div>
+
+    <div class="card card-nutriente">
+        <div class="card-body">
+            <span class="nutri-header">Minerais (Selênio / Zinco / Cobre)</span>
+            <p class="nutri-text">Antioxidantes e base para espermatogênese e desenvolvimento fetal.</p>
+        </div>
+    </div>
+
+    <div class="card card-nutriente">
+        <div class="card-body">
+            <span class="nutri-header">Vitaminas (A / E)</span>
+            <p class="nutri-text">Saúde uterina e proteção dos tecidos reprodutivos.</p>
+        </div>
+    </div>
+</div>
             <h2>Sanidade e Biossegurança</h2>
             <h3>Exames Obrigatórios e Rotineiros</h3>
             <ul>
