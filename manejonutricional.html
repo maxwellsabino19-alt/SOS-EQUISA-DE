@@ -145,7 +145,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo Nutricional - Condição Corporal</title>
     <style>
-        * {
+        * {word-break:break-all;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -441,17 +441,6 @@
             padding-bottom: 15px;
         }
 
-        .cavalo-container {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-            /* Placeholder para a silhueta do cavalo (use uma silhueta limpa) */
-            background: #1a1a1a url('https://img.icons8.com/wired/1000/000000/horse.png') no-repeat center;
-            background-size: contain;
-            aspect-ratio: 16 / 9;
-            /* Mantém proporção de infográfico */
-            border-radius: 10px;
-        }
 
         /* PONTOS DE AVALIAÇÃO (Ajustados conforme imagem) */
         .ponto-avaliacao {
@@ -593,36 +582,104 @@
     </section>
 </div>
                 <article class="card-biometria">
-                    <h3>ALTURA DE CERNELHA</h3>
-                    <table>
-                        <tr>
-                            <td>Baixo</td>
-                            <td>1,35 a 1,50 m</td>
-                        </tr>
-                        <tr>
-                            <td>Médio</td>
-                            <td>1,50 a 1,60 m</td>
-                        </tr>
-                        <tr>
-                            <td>Alto</td>
-                            <td>acima de 1,60 m</td>
-                        </tr>
-                    </table>
-                </article>
+<style>
+    .cernelha-app-module {
+        background-color: #000;
+        padding: 15px;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+    }
 
+    .cernelha-app-module h3 {
+        color: #ffd700;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* Container que habilita a barra de rolagem lateral */
+    .table-responsive-container {
+        width: 100%;
+        overflow-x: auto; /* Habilita rolagem horizontal */
+        -webkit-overflow-scrolling: touch; /* Rolagem suave no iOS */
+        border: 1px solid #333;
+        border-radius: 8px;
+        background: #0a0a0a;
+    }
+
+    .cernelha-app-module table {
+        width: 100%;
+        min-width: 300px; /* Garante que a tabela não "esprema" demais */
+        border-collapse: collapse;
+        color: #fff;
+    }
+
+    .cernelha-app-module td {
+        padding: 15px;
+        border-bottom: 1px solid #222;
+        font-size: 0.95rem;
+    }
+
+    /* Estilo para a primeira coluna (Rótulos) */
+    .cernelha-app-module td:first-child {
+        color: #ffd700;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        background: rgba(255, 215, 0, 0.05);
+        width: 40%;
+    }
+
+    /* Remove a borda da última linha */
+    .cernelha-app-module tr:last-child td {
+        border-bottom: none;
+    }
+
+    /* Customização da barra de rolagem (opcional para estética) */
+    .table-responsive-container::-webkit-scrollbar {
+        height: 4px;
+    }
+    .table-responsive-container::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="cernelha-app-module">
+    <article>
+        <h3>ALTURA DE CERNELHA</h3>
+        
+        <div class="table-responsive-container">
+            <table>
+                <tr>
+                    <td>Baixo</td>
+                    <td>1,35 a 1,50 m</td>
+                </tr>
+                <tr>
+                    <td>Médio</td>
+                    <td>1,50 a 1,60 m</td>
+                </tr>
+                <tr>
+                    <td>Alto</td>
+                    <td>acima de 1,60 m</td>
+                </tr>
+            </table>
+        </div>
+    </article>
+</div>
                 <article class="card-biometria">
                     <h3>PESO CORPORAL</h3>
                     <table>
                         <tr>
-                            <td>Hipométrico</td>
+                            <td>Abaixo do peso</td>
                             <td>abaixo de 350 kg</td>
                         </tr>
                         <tr>
-                            <td>Eumétrico</td>
+                            <td>Peso ideal</td>
                             <td>entre 350 e 500 kg</td>
                         </tr>
                         <tr>
-                            <td>Hipermétrico</td>
+                            <td>Peso</td>
                             <td>acima de 550 kg</td>
                         </tr>
                     </table>
